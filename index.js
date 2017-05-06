@@ -5,6 +5,8 @@ const Telegram = require('telegram-node-bot'),
     workers:1
   });
 
+tg.setWebHook('https://telegram-project.herokuapp.com' + tg.token);
+
 const TodoController = require('./controllers/todo'),
   OtherwiseController = require('./controllers/otherwise');
 
